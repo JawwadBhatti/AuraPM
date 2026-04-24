@@ -1,5 +1,6 @@
-fastapi
-uvicorn
+# Vercel Deployment Requirements (UTF-8)
+fastapi==0.109.2
+uvicorn==0.27.1
 sqlalchemy
 psycopg2-binary
 python-multipart
