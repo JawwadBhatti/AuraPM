@@ -183,7 +183,7 @@ async def upload_proposal(
     db: Session = Depends(get_db),
     current_user: models.User = Depends(auth.get_current_user)
 ):
-    temp_path = f"temp_{file.filename}"
+    temp_path = f"/tmp/temp_{file.filename}"
     with open(temp_path, "wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
     
